@@ -5,7 +5,7 @@ import 'package:platform45accessment/core/error/fail.dart';
 import 'package:dartz/dartz.dart';
 
 import '../../domain/repositories/get_daily_forcast_data_repo.dart';
-import '../datasources/get_daily_temperature_data_source.dart';
+import '../datasources/Get_daily_forecast_data_source.dart';
 
 class DailyForecastDataRepositoryImplementation
     implements DailyForecastDataRepository {

@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import '../models/daily_forecast_data.dart';
+import '../models/Daily_forecast_class_model.dart';
 
 class DailyForecastDataSource {
   static Future<List<DailyForecastDataModel>> getForecastData() async {

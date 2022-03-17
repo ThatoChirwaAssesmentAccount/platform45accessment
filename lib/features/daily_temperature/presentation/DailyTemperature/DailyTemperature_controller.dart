@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-import '../../data/datasources/get_daily_temperature_data_source.dart';
-import '../../data/models/daily_forecast_data.dart';
+import '../../data/datasources/Get_daily_forecast_data_source.dart';
+import '../../data/models/Daily_forecast_class_model.dart';
 
 class DailyTemperatureController extends GetxController {
   var isloading = true.obs;
