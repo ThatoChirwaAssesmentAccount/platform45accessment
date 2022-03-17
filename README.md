@@ -4,13 +4,46 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a is a flutter project for fetching data through an api and displaying it as a list view . 
+The use case are as follows:
+-get json data through an API call from https://rapidapi.com/community/api/open-weather-map and display the information in a list views
+-pass data to the next page , using the selected list item as an index point , to populate all the remaining details of converted string object.
 
-A few resources to get you started if this is your first Flutter project:
+project Structure
+--
+Domian Layer - (Business logic) consist of :
+--
+ -entity level which is independent from external framework(It consists of the         classed object that will support the Use case)
+    --city class
+    --daily forecast class
+    --List element class 
+    --temperature class
+ -Usercase houses the logic for how the feature is suppose to behave 
+   --gets daily forecast 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Data Laya - (Works with Data manupluation) consists of:
+--
+-Data Source this handles the funcinality for interacting with internal or external sourced of data
+ --get remote data 
+ -Models they extend the entity class and convert external data source ( Json in our case could be XML ) into Strings that will be able to display in the list view
+  --city subclass 
+  --Daily forecast class
+  Presentation Layer- ( handles the states and views) consits of:
+  --
+  DailyTemprature Getx generater file ( handles the state , view and control of the Ui)
+  --daily temperature controller 
+  --daily temperature binding 
+  --daily temperature page
+  
+  Packages to be used during the project
+  -- http , for calling api 
+  --mockito for doing mock tests whiile emulating the how our Api will behave
+  --get for GetX manipulation
+  --equatable to implement value based equality without needing to explicitly override == and hashCode
+ -- Purify your Dart code using efficient immutable data structures, monads, lenses and other FP tools 
+ 
+ 
+  
+  
+ 
+  
