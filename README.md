@@ -25,10 +25,11 @@ Data Laya - (Works with Data manupluation) consists of:
 --
 -Data Source this handles the funcinality for interacting with internal or external sourced of data
  --get remote data 
- -Models they extend the entity class and convert external data source ( Json in our case could be XML ) into Strings that will be able to display in the list view
+-Models they extend the entity class and convert external data source ( Json in our case could be XML ) into Strings that will be able to display in the list view
   --city subclass 
   --Daily forecast class
-  Presentation Layer- ( handles the states and views) consits of:
+  
+ Presentation Layer- ( handles the states and views) consits of:
   --
   DailyTemprature Getx generater file ( handles the state , view and control of the Ui)
   --daily temperature controller 
@@ -36,6 +37,7 @@ Data Laya - (Works with Data manupluation) consists of:
   --daily temperature page
   
   Packages to be used during the project
+  --
   -- http , for calling api 
   --mockito for doing mock tests whiile emulating the how our Api will behave
   --get for GetX manipulation
